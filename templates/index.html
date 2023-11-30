@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Custom QR Code Scanner</title>
+    
+    <!-- html5-qrcode 2.3.8 버전 사용-->
+    <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+</head>
+
+<body>
+    <div id="qr-reader-results"></div>
+    <div id="qr-reader"></div>
+    <label for="camera-select">Select Camera:</label>
+    <select id="camera-select"></select>
+    <button id="start-button">Start Scan</button>
+    <button id="stop-button">Stop Scan</button>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+
+</html>
